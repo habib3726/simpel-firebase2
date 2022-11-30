@@ -1,10 +1,20 @@
 import React from 'react';
+import { useState } from 'react';
 import { Link } from 'react-router-dom';
 
 const Registration = () => {
+    const [name, setName] = useState('');
+    const [email, setEmail] = useState('');
+    const [password, setPassword] = useState('');
+    const [error, setError] = useState('');
+
+    const handleName=(e)=>{
+        console.log(e.target.value)
+        setName(e.target.value)
+    }
     return (
         <div className="mt-5">
-            <div className="main-container d-flex container justify-content-between align-items-center">
+            <div className="main-container d-md-flex container justify-content-between align-items-center">
                 <div className="register-image image-fluid w-100  ">
                     <img
                         className="w-100 img-fluid image-fluid"
@@ -17,6 +27,7 @@ const Registration = () => {
                         <p className="text-danger">{"error"}</p>
                         <form action="">
                             <input
+                                onBlur={handleName}
                                 className="form-control p-3 m-2"
                                 type="text"
                                 placeholder="Enter your name"

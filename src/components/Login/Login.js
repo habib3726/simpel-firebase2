@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom';
 const Login = () => {
     return (
         <div className="mt-5">
-            <div className="main-container d-flex container justify-content-between align-items-center">
+            <div className="main-container d-md-flex container justify-content-between align-items-center">
                 <div className="register-image image-fluid w-100  ">
                     <img
                         className="w-100 img-fluid image-fluid"

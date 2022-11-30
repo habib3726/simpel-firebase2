@@ -45,7 +45,7 @@ const Footer = () => {
             </div>
 
             <footer className="main-footer">
-                <p>
+                <p className='text-info fs-4'>
                     <span className="m-2 p-3">
                         <FontAwesomeIcon icon={faSignal} />{" "}
                     </span>
@@ -59,7 +59,7 @@ const Footer = () => {
                         <FontAwesomeIcon icon={faHospital} />{" "}
                     </span>
                 </p>
-                <p>
+                <p className='text-white'>
                     <small>
                         © 2017 - IWTHEMES® ENVATOenvato brand. ALL RIGHTS RESERVED. PRIVACY
                         POLICY
